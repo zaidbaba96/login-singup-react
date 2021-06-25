@@ -79,6 +79,7 @@ const Login = ()=>{
                 button: false
               })
           console.log("Login Successfully")
+		 return  history.push("/home");
 
         }
         }
