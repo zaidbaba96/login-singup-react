@@ -9,5 +9,5 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 // create a GET route
 app.get('/*', (req, res) => {
-    res.sendFile('index.html', {root: './build'})
+    res.sendFile('index.html', {root: 'build'})
 });
