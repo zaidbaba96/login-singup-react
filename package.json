@@ -1,6 +1,9 @@
 {
   "name": "login_singup",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x"
+  },
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.6.0",
