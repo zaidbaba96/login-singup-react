@@ -16,14 +16,10 @@ function App() {
     <Router>
     
     <Switch>
+    <Route path="/" component={Login}/>
+    <Route path="/signup" component={SignUp}/>
     <Route exact path="/home" component={Home}/> 
     <Route exact path="/test" component={Test}/> 
-    
-    <Route path="/" component={Login}/>
-     
-    <Route path="/signup" component={SignUp}/>
-
-  
     <Route component={ErrorPage}/>
     </Switch>
     </Router>
