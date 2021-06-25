@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "engines": {
     "node": "14.17.1",
-    "npm" : "7.19.0"
+    "npm": "7.19.0"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.9.0",
     "react-hook-form-resolvers": "0.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "sweetalert": "^2.1.2",
     "web-vitals": "^1.1.2",
