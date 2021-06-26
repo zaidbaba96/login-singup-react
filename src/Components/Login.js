@@ -144,7 +144,7 @@ const Login = ()=>{
   
         <div className="col-7 ">
             <button type="submit" name="login" id ="login" disabled={!isEnabled} class="btn btn-login float-right border-dark font-weight-bold px-2">Submit</button>
-            <NavLink class="btn btn-login  m-3 ml-5 border border-dark" to="/signup" >I Don't have Account</NavLink>    
+             <NavLink to="/signup">I Don't have Account</NavLink>    
         
         </div>
         
