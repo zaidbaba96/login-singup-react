@@ -50,7 +50,7 @@ const { register, handleSubmit, formState } = useForm(formOptions);
 
     const {name , email , phone , work , password , confirmPassword} = user;
 
-    const res = await fetch("http://localhost:4000/register", {
+    const res = await fetch("https://backend-node-app.herokuapp.com/register", {
       method:"POST",
       headers:{"Content-Type" : "application/json"},
       body:JSON.stringify({
@@ -156,10 +156,10 @@ const { register, handleSubmit, formState } = useForm(formOptions);
   <div className="container">
 	<div className="row">
 		<div className="col-md-4 signup-sec">
-		    <h2 className ="text-center">Signup Now</h2>
+		    <h2 className ="text-center mt-0">Signup Now</h2>
 	<form className="login-form" onSubmit={handleSubmit(PostData)}>
         <div className="form-group">
-            <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+            <label for="exampleInputEmail1" class="text-uppercase mt-1">Username</label>
             <input type="text"  name="name" {...register('name')} className={`form-control ${errors.name ? 'is-invalid' : ''}`} value={user.name} onChange={handleInputs} id="name" placeholder="Enter Name"/>
             <span>{errors.name?.message}</span>
         </div>
@@ -202,8 +202,8 @@ const { register, handleSubmit, formState } = useForm(formOptions);
                  <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                   </ol>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <div className="carousel-inner" role="listbox">
                 <div className="carousel-item active">
                     <img className="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="First slide"/>
